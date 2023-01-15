@@ -20,6 +20,9 @@ try {
             return arg;
         }
     });
+    if (process.env.DEBUG === "eslint-cjs-to-esm") {
+        console.debug({ args, eslintBin, builtinConfig });
+    }
     const { stdout, stderr } = await execa("node", [
         eslintBin,
         "--config",
