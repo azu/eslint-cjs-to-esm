@@ -11,11 +11,6 @@ const __dirname = path.dirname(__filename__);
 
 const builtinConfig = path.join(__dirname, ".eslintrc.cjs");
 try {
-    console.log({
-        eslintBin,
-        builtinConfig,
-        args: process.argv.slice(2)
-    })
     const { stdout, stderr } = await execa("node", [
         eslintBin,
         "--config",
