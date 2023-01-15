@@ -40,6 +40,7 @@
     "test": "expected-exit-status 1 --command 'node eslint-cjs-to-esm.js \"./test-fixtures/*\"'"
   },
   "devDependencies": {
+    "eslint-import-resolver-typescript": "^3.5.3",
     "expected-exit-status": "^2.0.0"
   },
   "packageManager": "npm@9.2.0",
