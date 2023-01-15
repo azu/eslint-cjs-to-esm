@@ -10,6 +10,12 @@ Install with [npm](https://www.npmjs.com/package/eslint-cjs-to-esm):
 
 ## Usage
 
+Command Line Arguments is same to ESLint.
+
+    npx eslint-cjs-to-esm [ESLint Arguments!]
+
+- [Command Line Interface - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/command-line-interface)
+
 Run Lint
 
     npx eslint-cjs-to-esm "src/**/*.{js,ts}"
