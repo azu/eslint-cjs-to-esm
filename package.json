@@ -37,24 +37,10 @@
     ".eslintrc.cjs"
   ],
   "scripts": {
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
-    "prepare": "git config --local core.hooksPath .githooks",
     "test": "expected-exit-status 1 --command 'node eslint-cjs-to-esm.js \"./test-fixtures/*\"'"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,css}": [
-      "prettier --write"
-    ]
-  },
-  "prettier": {
-    "printWidth": 120,
-    "singleQuote": false,
-    "tabWidth": 4,
-    "trailingComma": "none"
-  },
   "devDependencies": {
-    "expected-exit-status": "^2.0.0",
-    "prettier": "^2.8.3"
+    "expected-exit-status": "^2.0.0"
   },
   "packageManager": "npm@9.2.0",
   "dependencies": {
