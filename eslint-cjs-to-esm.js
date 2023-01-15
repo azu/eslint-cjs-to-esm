@@ -28,6 +28,7 @@ try {
         "--config",
         builtinConfig,
         ...args], {
+        localDir: __dirname,
         cwd: __dirname
     });
     if (stdout) {
