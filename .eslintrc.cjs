@@ -13,6 +13,9 @@ module.exports = {
         "import/resolver": {
             typescript: true,
             node: true
+        },
+        "node": {
+            "tryExtensions": [".ts", ".js", ".json", ".node"]
         }
     },
     
