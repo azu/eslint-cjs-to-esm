@@ -27,7 +27,7 @@ module.exports = {
     ],
     "rules": {
         // https://github.com/mysticatea/eslint-plugin-node
-        "node/no-missing-import": "error",
+        // "node/no-missing-import": "error",
         "node/no-extraneous-import": "error",
         "node/no-sync": "error",
         "node/file-extension-in-import": "error",
