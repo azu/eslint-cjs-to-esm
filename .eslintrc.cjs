@@ -16,7 +16,7 @@ module.exports = {
         },
         "node": {
             "resolvePaths": ["node_modules/@types"],
-            "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts", ".cjs", ".mjs", ".mts", "cts"]
+            // "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts", ".cjs", ".mjs", ".mts", "cts"]
         }
     },
     
