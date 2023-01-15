@@ -1,6 +1,6 @@
 {
   "name": "eslint-cjs-to-esm",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "ESLint wrapper for migration from CJS to ESM.",
   "keywords": [
     "eslint",
