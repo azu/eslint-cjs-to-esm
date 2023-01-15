@@ -18,12 +18,15 @@ Command Line Arguments is same to ESLint.
 
 Run Lint
 
-    npx eslint-cjs-to-esm "src/**/*.{js,ts}"
+    npx eslint-cjs-to-esm "./src/**/*.{js,ts}"
 
 Fix Errors
 
-    npx eslint-cjs-to-esm "src/**/*.{js,ts}" --fix
+    npx eslint-cjs-to-esm "./src/**/*.{js,ts}" --fix
 
+> **Note:** You need to start with `.` for relative path. It is wrapper limitation.  
+> NG: `npx eslint-cjs-to-esm "src/**/*.ts"  
+> OK: `npx eslint-cjs-to-esm "./src/**/*.ts"  
 
 ## Rules
 
