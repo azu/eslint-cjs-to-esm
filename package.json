@@ -29,6 +29,9 @@
     "./package.json": "./package.json"
   },
   "main": "eslint-wrapper-bin.js",
+  "bin": {
+    "eslint-cjs-to-esm": "eslint-cjs-to-esm.js"
+  },
   "files": [
     "eslint-wrapper-bin.js",
     ".eslintrc.cjs"
@@ -36,7 +39,7 @@
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
     "prepare": "git config --local core.hooksPath .githooks",
-    "test": "expected-exit-status 1 --command 'node eslint-wrapper-bin.js \"./test-fixtures/*\"'"
+    "test": "expected-exit-status 1 --command 'node eslint-cjs-to-esm.js \"./test-fixtures/*\"'"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css}": [
