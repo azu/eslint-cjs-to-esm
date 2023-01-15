@@ -33,7 +33,7 @@ module.exports = {
         // this plugin does not allow ".js" from ts?
         // "node/no-missing-import": "error",
         "node/no-extraneous-import": "error",
-        "node/no-sync": "error",
+        "node/no-sync": "warn",
         "node/file-extension-in-import": "error",
         // https://github.com/import-js/eslint-plugin-import
         "import/extensions": "error",
