@@ -24,16 +24,16 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    ".": "./eslint-wrapper-bin.js",
+    ".": "./eslint-cjs-to-esm.js.js",
     "./.eslintrc.cjs": "./.eslintrc.cjs",
     "./package.json": "./package.json"
   },
-  "main": "eslint-wrapper-bin.js",
+  "main": "eslint-cjs-to-esm.js.js",
   "bin": {
     "eslint-cjs-to-esm": "eslint-cjs-to-esm.js"
   },
   "files": [
-    "eslint-wrapper-bin.js",
+    "eslint-cjs-to-esm.js",
     ".eslintrc.cjs"
   ],
   "scripts": {
