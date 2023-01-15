@@ -15,7 +15,8 @@ module.exports = {
             node: true
         },
         "node": {
-            "tryExtensions": [".ts", ".js", ".json", ".node"]
+            "resolvePaths": ["node_modules/@types"],
+            "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts"]
         }
     },
     
