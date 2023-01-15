@@ -12,7 +12,7 @@ const builtinConfig = path.join(__dirname, ".eslintrc.cjs");
 try {
     console.log({
         eslintBin,
-        builtinConfig
+        builtinConfig,
         args: process.argv.slice(2)
     })
     const { stdout, stderr } = await execa("node", [
