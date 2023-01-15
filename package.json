@@ -36,9 +36,7 @@
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
     "prepare": "git config --local core.hooksPath .githooks",
-    "prepublishOnly": "npm run build",
-    "test": "expected-exit-status 1 --command 'node eslint-wrapper-bin.js \"./test-fixtures/*\"'",
-    "watch": "tsc -p . --watch"
+    "test": "expected-exit-status 1 --command 'node eslint-wrapper-bin.js \"./test-fixtures/*\"'"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css}": [
