@@ -3,8 +3,17 @@ import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
 const eslintBin = require.resolve(".bin/eslint");
+import url from "node:url";
+import path from "node:path";
+const __filename__ = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename__);
+
+const builtinConfig = path.join(__dirname, ".eslintrc.cjs");
 try {
-    const { stdout, stderr } = await execa(eslintBin, process.argv.slice(2));
+    const { stdout, stderr } = await execa(eslintBin, [
+        "--config",
+        builtinConfig,
+        ...process.argv.slice(2)]);
     if (stdout) {
         console.log(stdout);
         process.exitCode = 0;
