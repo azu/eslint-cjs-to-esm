@@ -13,6 +13,10 @@ try {
         process.exitCode = 1;
     }
 } catch (e) {
-    console.error(e);
+    if (e.stdout) {
+        console.log(e.stdout);
+    } else if (e.stderr) {
+        console.error(e.stderr);
+    }
     process.exit(1);
 }

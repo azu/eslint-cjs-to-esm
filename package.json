@@ -38,7 +38,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
     "prepare": "git config --local core.hooksPath .githooks",
     "prepublishOnly": "npm run build",
-    "test": "mocha",
+    "test": "expected-exit-status 1 --command 'node eslint-wrapper-bin.js \"./test-fixtures/*\"'",
     "watch": "tsc -p . --watch"
   },
   "lint-staged": {
@@ -53,6 +53,7 @@
     "trailingComma": "none"
   },
   "devDependencies": {
+    "expected-exit-status": "^2.0.0",
     "prettier": "^2.8.3"
   },
   "packageManager": "yarn@1.22.19",
