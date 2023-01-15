@@ -28,6 +28,12 @@ Fix Errors
 > NG: `npx eslint-cjs-to-esm "src/**/*.ts"  
 > OK: `npx eslint-cjs-to-esm "./src/**/*.ts"  
 
+DEBUG:
+
+```bash
+DEBUG=eslint-cjs-to-esm npx eslint-cjs-to-esm "./src/**/*.{js,ts}"
+```
+
 ## Rules
 
 ### eslint-plugin-node
