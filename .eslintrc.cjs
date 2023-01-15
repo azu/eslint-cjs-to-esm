@@ -10,9 +10,12 @@ module.exports = {
         "sourceType": "module"
     },
     "settings": {
-        typescript: true,
-        node: true
+        "import/resolver": {
+            typescript: true,
+            node: true
+        }
     },
+    
     "plugins": [
         "node",
         "import",
