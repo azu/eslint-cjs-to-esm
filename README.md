@@ -64,6 +64,7 @@ DEBUG=eslint-cjs-to-esm npx eslint-cjs-to-esm "./src/**/*.{js,ts}"
 | [unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn) | [prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md) | [:link:](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/rules/prefer-top-level-await.js) | Prefer top-level await over top-level promises and async function calls.  | Suggest |
 
 - [ESLint rules for migrating projects from CommonJS to ESM](https://gist.github.com/Jaid/164668c0151ae09d2bc81be78a203dd5)
+- [Make &quot;import/extensions&quot; require the .js extension in a Node.js TypeScript project - Stack Overflow](https://stackoverflow.com/questions/71998932/make-import-extensions-require-the-js-extension-in-a-node-js-typescript-proje)
 
 ## Changelog
 

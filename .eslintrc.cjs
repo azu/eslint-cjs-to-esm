@@ -15,7 +15,7 @@ module.exports = {
             node: true
         },
         "node": {
-            "resolvePaths": ["node_modules/@types"],
+            "resolvePaths": ["node_modules/@types"]
             // "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts", ".cjs", ".mjs", ".mts", "cts"]
         }
     },
@@ -23,9 +23,12 @@ module.exports = {
     "plugins": [
         "node",
         "import",
-        "unicorn"
+        "unicorn",
+        "file-extension-in-import-ts"
     ],
     "rules": {
+        // https://github.com/AlexSergey/eslint-plugin-file-extension-in-import-ts
+        "file-extension-in-import-ts/file-extension-in-import-ts": "error",
         // https://github.com/mysticatea/eslint-plugin-node
         // this plugin does not allow ".js" from ts?
         // "node/no-missing-import": "error",
