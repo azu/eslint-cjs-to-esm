@@ -42,6 +42,9 @@ DEBUG=eslint-cjs-to-esm npx eslint-cjs-to-esm "./src/**/*.{js,ts}"
 
 ## Rules
 
+This rule set is based on [ESLint rules for migrating projects from CommonJS to ESM](https://gist.github.com/Jaid/164668c0151ae09d2bc81be78a203dd5).
+
+
 ### eslint-plugin-file-extension-in-import-ts
 
 - [eslint-plugin-file-extension-in-import-ts](https://github.com/AlexSergey/eslint-plugin-file-extension-in-import-ts)
