@@ -28,6 +28,9 @@ try {
         "--config",
         builtinConfig,
         ...args], {
+        env: {
+            FORCE_COLOR: "true"
+        },
         localDir: __dirname,
         cwd: __dirname
     });
