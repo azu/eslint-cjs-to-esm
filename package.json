@@ -24,13 +24,13 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    ".": "./eslint-cjs-to-esm.js.js",
+    ".": "./eslint-cjs-to-esm.js",
     "./.eslintrc.cjs": "./.eslintrc.cjs",
     "./package.json": "./package.json"
   },
-  "main": "eslint-cjs-to-esm.js.js",
+  "main": "eslint-cjs-to-esm.js",
   "bin": {
-    "eslint-cjs-to-esm": "eslint-cjs-to-esm.js"
+    "eslint-cjs-to-esm": "./eslint-cjs-to-esm.js"
   },
   "files": [
     "eslint-cjs-to-esm.js",
