@@ -27,6 +27,7 @@ module.exports = {
     ],
     "rules": {
         // https://github.com/mysticatea/eslint-plugin-node
+        // this plugin does not allow ".js" from ts?
         // "node/no-missing-import": "error",
         "node/no-extraneous-import": "error",
         "node/no-sync": "error",
