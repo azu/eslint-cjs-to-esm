@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { execa } from "execa";
 import { createRequire } from "node:module";
 
