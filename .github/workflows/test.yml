@@ -8,16 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14, 16, 18]
+        node-version: [16, 18]
     steps:
       - name: checkout
         uses: actions/checkout@v3
       - name: setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          cache: "yarn"
+          cache: "npm"
           node-version: ${{ matrix.node-version }}
       - name: Install
-        run: yarn install
+        run: npm ci
       - name: Test
-        run: yarn test
+        run: npm test
