@@ -36,11 +36,15 @@ DEBUG=eslint-cjs-to-esm npx eslint-cjs-to-esm "./src/**/*.{js,ts}"
 
 ## Rules
 
+### eslint-plugin-file-extension-in-import-ts
+
+- [eslint-plugin-file-extension-in-import-ts](https://github.com/AlexSergey/eslint-plugin-file-extension-in-import-ts)
+  - [[import/no-unresolved] not working for index.js · Issue #1292 · import-js/eslint-plugin-import](https://github.com/import-js/eslint-plugin-import/issues/1292)
+
 ### eslint-plugin-node
 
 | ESLint Plugin                                            | Rule                                                                                                                            | Source                                                                                                       | Description                                                       | Fixable |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|---------|
-| [node](https://github.com/mysticatea/eslint-plugin-node) | [no-missing-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-missing-import.md)               | [:link:](https://github.com/mysticatea/eslint-plugin-node/blob/master/lib/rules/no-missing-import.js)        | disallow import declarations which `import` non-existence modules | -       |
 | [node](https://github.com/mysticatea/eslint-plugin-node) | [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md)         | [:link:](https://github.com/mysticatea/eslint-plugin-node/blob/master/lib/rules/no-extraneous-import.js)     | disallow import declarations which import extraneous modules      | -       |
 | [node](https://github.com/mysticatea/eslint-plugin-node) | [no-sync](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-sync.md)                                   | [:link:](https://github.com/mysticatea/eslint-plugin-node/blob/master/lib/rules/no-sync.js)                  | disallow synchronous methods                                      | -       |
 | [node](https://github.com/mysticatea/eslint-plugin-node) | [file-extension-in-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/file-extension-in-import.md) | [:link:](https://github.com/mysticatea/eslint-plugin-node/blob/master/lib/rules/file-extension-in-import.js) | enforce the style of file extensions in `import` declarations     | Yes     |
