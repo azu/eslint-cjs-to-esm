@@ -2,8 +2,7 @@
 
 ESLint wrapper for migration from CJS to ESM.
 
-This Project aims to help migration from CJS to ESM.
-Main use-case is to migrate from CommonJS(TypeScript) to ES Modules(TypeScript).
+This tool main use-case is to migrate from CommonJS(JavaScript/TypeScript) to ES Modules(JavaScript/TypeScript).
 
 This tool is a wrapper of ESLint, and it built-in some rules for migration.
 So, you can just use this tool without any configuration.
