@@ -44,7 +44,7 @@
   },
   "packageManager": "npm@9.6.0",
   "dependencies": {
-    "@typescript-eslint/parser": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.1",
     "eslint": "^8.32.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-file-extension-in-import-ts": "^1.0.1",
