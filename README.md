@@ -67,6 +67,8 @@ This rule set is based on [ESLint rules for migrating projects from CommonJS to 
 | [import](https://github.com/import-js/eslint-plugin-import) | [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md) | [:link:](https://github.com/import-js/eslint-plugin-import/blob/main/src/rules/no-extraneous-dependencies.js) | Forbid the use of extraneous packages.                               | -       |
 | [import](https://github.com/import-js/eslint-plugin-import) | [no-commonjs](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-commonjs.md)                               | [:link:](https://github.com/import-js/eslint-plugin-import/blob/main/src/rules/no-commonjs.js)                | Report CommonJS `require` calls and `module.exports` or `exports.*`. | -       |
 
+📝 [commonjs-to-es-module-codemod](https://github.com/azu/commonjs-to-es-module-codemod) helps you to migrate from `require`/`exports`(CJS) to `import`/`export`(ESM).
+
 ### eslint-plugin-unicorn
 
 | ESLint Plugin                                                    | Rule                                                                                                                           | Source                                                                                                    | Description                                                               | Fixable |
