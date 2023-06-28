@@ -42,7 +42,7 @@
   "devDependencies": {
     "expected-exit-status": "^2.0.0"
   },
-  "packageManager": "npm@9.7.1",
+  "packageManager": "npm@9.7.2",
   "dependencies": {
     "@typescript-eslint/parser": "^5.60.0",
     "eslint": "^8.32.0",
