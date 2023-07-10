@@ -2,7 +2,7 @@
 
 ESLint wrapper for migration from CJS to ESM.
 
-This tool main use-case is to migrate from CommonJS(JavaScript/TypeScript) to ES Modules(JavaScript/TypeScript).
+This tool's main use-case is to migrate from CommonJS (JavaScript/TypeScript) to ES Modules (JavaScript/TypeScript).
 
 This tool is a wrapper of ESLint, and it built-in some rules for migration.
 So, you can just use this tool without any configuration.
@@ -15,9 +15,10 @@ Install with [npm](https://www.npmjs.com/package/eslint-cjs-to-esm):
 
 ## Usage
 
-Command Line Arguments is same to ESLint.
+Command Line Arguments are the same as those of ESLint.
 
     npx eslint-cjs-to-esm [ESLint Arguments!]
+
 
 - [Command Line Interface - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/command-line-interface)
 
