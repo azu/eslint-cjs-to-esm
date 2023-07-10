@@ -1,0 +1,1 @@
+import {indexValue} from "./dir";
