@@ -37,7 +37,7 @@
     ".eslintrc.cjs"
   ],
   "scripts": {
-    "test": "expected-exit-status 1 --command 'node eslint-cjs-to-esm.js \"./test-fixtures/*\"'"
+    "test": "expected-exit-status 1 --stdout '/\\d+ problems/' --command 'node eslint-cjs-to-esm.js \"./test-fixtures/*\"'"
   },
   "devDependencies": {
     "expected-exit-status": "^3.1.0"
@@ -45,7 +45,7 @@
   "packageManager": "npm@9.7.2",
   "dependencies": {
     "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.32.0",
+    "eslint": "^8.44.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-file-extension-in-import-ts": "^1.0.2",
     "eslint-plugin-import": "^2.27.5",
