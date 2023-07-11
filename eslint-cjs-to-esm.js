@@ -47,5 +47,5 @@ try {
     } else if (e.stderr) {
         console.error(e.stderr);
     }
-    process.exit(2);
+    process.exit(1);
 }
