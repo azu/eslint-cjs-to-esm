@@ -31,7 +31,7 @@ module.exports = {
     "file-extension-in-import-ts/file-extension-in-import-ts": [
       "error",
       "always",
-      { extMapping: { ".ts": ".js" }, forceIndexFileImport: true },
+      { extMapping: { ".ts": ".js" } },
     ],
     // https://github.com/mysticatea/eslint-plugin-node
     // this plugin does not allow ".js" from ts?
@@ -41,7 +41,8 @@ module.exports = {
     "node/file-extension-in-import": "error",
     // https://github.com/import-js/eslint-plugin-import
     "import/extensions": "error",
-    "import/no-unresolved": "error",
+    // conflict with file-extension-in-import-ts
+    'import/no-unresolved': ['error', { ignore: [ '\\.js$' ] }],
     "import/no-useless-path-segments": "error",
     "import/no-extraneous-dependencies": "error",
     "import/no-commonjs": "error",
