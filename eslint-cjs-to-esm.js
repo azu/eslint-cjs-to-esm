@@ -3,7 +3,9 @@ import { execa } from "execa";
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
-const eslintBin = require.resolve(".bin/eslint");
+const isWindows = /^win/.test(process.platform);
+const eslintBinBasePath = ".bin/eslint";
+const eslintBin = require.resolve(isWindows ? `${eslintBinBasePath}.cmd` : eslintBinBasePath);
 import url from "node:url";
 import path from "node:path";
 
@@ -23,8 +25,10 @@ try {
     if (process.env.DEBUG === "eslint-cjs-to-esm") {
         console.debug({ args, eslintBin, builtinConfig });
     }
-    const { stdout, stderr } = await execa("node", [
-        eslintBin,
+    const command = isWindows ? eslintBin : "node";
+    const platformArguments = isWindows ? [] : [eslintBin];
+    const { stdout, stderr } = await execa(command, [
+        ...platformArguments,
         "--config",
         builtinConfig,
         ...args], {

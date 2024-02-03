@@ -37,7 +37,7 @@
     ".eslintrc.cjs"
   ],
   "scripts": {
-    "test": "expected-exit-status 1 --stdout '/\\d+ problems/' --command 'node eslint-cjs-to-esm.js \"./test-fixtures/*\"'"
+    "test": "expected-exit-status 1 --stdout \"/\\d+ problems/\" --command \"node eslint-cjs-to-esm.js \"\"./test-fixtures/*.ts\"\"\""
   },
   "devDependencies": {
     "expected-exit-status": "^3.1.0"
