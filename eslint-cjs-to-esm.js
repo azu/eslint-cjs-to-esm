@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 import { execa } from "execa";
-import { createRequire } from "node:module";
 
-const require = createRequire(import.meta.url);
-const eslintBin = require.resolve(".bin/eslint");
 import url from "node:url";
 import path from "node:path";
 
@@ -21,10 +18,10 @@ try {
         }
     });
     if (process.env.DEBUG === "eslint-cjs-to-esm") {
-        console.debug({ args, eslintBin, builtinConfig });
+        console.debug({ args, builtinConfig });
     }
-    const { stdout, stderr } = await execa("node", [
-        eslintBin,
+    const { stdout, stderr } = await execa("npx", [
+        "eslint",
         "--config",
         builtinConfig,
         ...args], {
