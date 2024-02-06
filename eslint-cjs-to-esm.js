@@ -31,6 +31,8 @@ try {
         ...platformArguments,
         "--config",
         builtinConfig,
+        "--no-eslintrc",
+        "--no-inline-config",
         ...args], {
         env: {
             FORCE_COLOR: "true"
