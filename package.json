@@ -25,16 +25,16 @@
   "type": "module",
   "exports": {
     ".": "./eslint-cjs-to-esm.js",
-    "./.eslintrc.cjs": "./.eslintrc.cjs",
+    "./eslint.config.mjs": "./eslint.config.mjs",
     "./package.json": "./package.json"
   },
-  "main": "eslint-cjs-to-esm.js",
+  "main": "./eslint-cjs-to-esm.js",
   "bin": {
     "eslint-cjs-to-esm": "./eslint-cjs-to-esm.js"
   },
   "files": [
-    "eslint-cjs-to-esm.js",
-    ".eslintrc.cjs"
+    "./eslint-cjs-to-esm.js",
+    "./eslint.config.mjs"
   ],
   "scripts": {
     "test": "expected-exit-status 1 --stdout \"/\\d+ problems/\" --command \"node eslint-cjs-to-esm.js \"\"./test-fixtures/*.ts\"\"\""
@@ -44,13 +44,15 @@
   },
   "packageManager": "npm@10.9.2",
   "dependencies": {
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.56.0",
-    "eslint-import-resolver-typescript": "^3.6.3",
+    "@eslint/compat": "^1.2.4",
+    "typescript-eslint": "^8.19.0",
+    "eslint": "^9.17.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-file-extension-in-import-ts": "^2.1.1",
-    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-unicorn": "^51.0.1",
-    "execa": "^8.0.1"
+    "eslint-plugin-unicorn": "^56.0.1",
+    "execa": "^9.5.2",
+    "globals": "^15.14.0"
   }
 }

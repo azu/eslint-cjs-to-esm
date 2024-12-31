@@ -12,7 +12,7 @@ import path from "node:path";
 const __filename__ = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename__);
 
-const builtinConfig = path.join(__dirname, ".eslintrc.cjs");
+const builtinConfig = path.join(__dirname, "eslint.config.mjs");
 try {
     const args = process.argv.slice(2).map(arg => {
         // if arg is path like string, convert it absolute path
@@ -31,7 +31,7 @@ try {
         ...platformArguments,
         "--config",
         builtinConfig,
-        "--no-eslintrc",
+        "--no-config-lookup",
         "--no-inline-config",
         ...args], {
         env: {
