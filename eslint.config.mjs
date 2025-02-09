@@ -1,4 +1,4 @@
-import node from "eslint-plugin-node";
+import node from "eslint-plugin-n";
 import _import from "eslint-plugin-import";
 import unicorn from "eslint-plugin-unicorn";
 import fileExtensionInImportTs from "eslint-plugin-file-extension-in-import-ts";
