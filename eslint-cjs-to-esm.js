@@ -36,9 +36,7 @@ try {
         ...args], {
         env: {
             FORCE_COLOR: "true"
-        },
-        localDir: __dirname,
-        cwd: __dirname
+        }
     });
     if (stdout) {
         console.log(stdout);
