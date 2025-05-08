@@ -44,7 +44,7 @@
   },
   "packageManager": "npm@10.9.2",
   "dependencies": {
-    "@eslint/compat": "^1.2.8",
+    "@eslint/compat": "^1.2.9",
     "eslint": "^9.20.0",
     "eslint-import-resolver-typescript": "^4.3.4",
     "eslint-plugin-file-extension-in-import-ts": "^2.1.1",
