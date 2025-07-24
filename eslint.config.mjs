@@ -21,7 +21,11 @@ export default [{
         },
         parser: tsParser,
         ecmaVersion: "latest",
-        sourceType: "module"
+        sourceType: "module",
+        parserOptions: {
+            projectService: true,
+            tsconfigRootDir: process.cwd()
+        }
     },
     
     settings: {
