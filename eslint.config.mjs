@@ -5,7 +5,13 @@ import fileExtensionInImportTs from "eslint-plugin-file-extension-in-import-ts";
 import { fixupPluginRules } from "@eslint/compat";
 import globals from "globals";
 import tsParser from "@typescript-eslint/parser";
+import fs from "node:fs";
+import path from "node:path";
 
+const hasTsconfig = fs.existsSync(path.join(
+    process.cwd(),
+    "tsconfig.json"
+));
 export default [{
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
     plugins: {
@@ -22,10 +28,10 @@ export default [{
         parser: tsParser,
         ecmaVersion: "latest",
         sourceType: "module",
-        parserOptions: {
+        parserOptions: hasTsconfig ? {
             projectService: true,
             tsconfigRootDir: process.cwd()
-        }
+        } : {}
     },
     
     settings: {
