@@ -53,7 +53,7 @@ export default [{
         }],
         
         "node/no-extraneous-import": "error",
-        "node/no-sync": "warn",
+        "node/no-sync": hasTsconfig ? "warn" : "off",
         "node/file-extension-in-import": "error",
         "import/extensions": "error",
         
