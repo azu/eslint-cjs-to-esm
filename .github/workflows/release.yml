@@ -80,10 +80,6 @@ jobs:
         if: steps.tag-check.outputs.exists == 'false'
         run: npm ci
       
-      - name: Build package
-        if: steps.tag-check.outputs.exists == 'false'
-        run: npm run build
-      
       - name: Publish to npm with provenance
         if: steps.tag-check.outputs.exists == 'false'
         run: npm publish --provenance --access public
