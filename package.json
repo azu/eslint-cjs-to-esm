@@ -42,7 +42,7 @@
   "devDependencies": {
     "expected-exit-status": "^3.1.0"
   },
-  "packageManager": "npm@11.6.3",
+  "packageManager": "npm@11.6.4",
   "dependencies": {
     "@eslint/compat": "^1.4.1",
     "eslint": "^9.20.0",
