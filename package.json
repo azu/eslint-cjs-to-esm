@@ -52,7 +52,7 @@
     "eslint-plugin-n": "^18.1.0",
     "eslint-plugin-unicorn": "^65.0.1",
     "execa": "^9.6.1",
-    "globals": "^17.6.0",
+    "globals": "^17.7.0",
     "typescript-eslint": "^8.61.1"
   }
 }
